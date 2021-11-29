@@ -4,9 +4,9 @@
     {
         public bool IsLeapYear(int year)
         {
-            if (year == 2001)
-                return false;
-            return true;
+            if (year == 2000)
+                return true;
+            return false;
         }
     }
 }

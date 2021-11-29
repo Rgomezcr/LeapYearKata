@@ -8,7 +8,7 @@ namespace LeapYearKata.Tests
         [Fact]
         public void CheckIfItsLeapYear()
         {
-            LeapYear leapYear = new();
+            var leapYear = new LeapYear();
 
             Assert.True(leapYear.IsLeapYear(2000));
         }
@@ -16,7 +16,7 @@ namespace LeapYearKata.Tests
         [Fact]
         public void CheckIfItsNotLeapYear()
         {
-            LeapYear leapYear = new();
+            var leapYear = new LeapYear();
             Assert.False(leapYear.IsLeapYear(2001));
         } 
     }
