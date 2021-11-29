@@ -34,6 +34,6 @@ namespace LeapYearKata.Tests
         {
             var leapYear = new LeapYear();
             Assert.False(leapYear.IsLeapYear(2001));
-        } 
+        }
     }
 }
