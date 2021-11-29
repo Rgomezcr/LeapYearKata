@@ -5,28 +5,15 @@ namespace LeapYearKata.Tests
 {
     public class LeapYearShould
     {
-        [Fact]
-        public void CheckIfItsLeapYear2000()
+        [Theory]
+        [InlineData(1996)]
+        [InlineData(2004)]
+        [InlineData(2008)]
+        public void CheckIfLeapYearItsDivisibleBy4(int year)
         {
             var leapYear = new LeapYear();
 
-            Assert.True(leapYear.IsLeapYear(2000));
-        }
-        
-        [Fact]
-        public void CheckIfItsLeapYear2004()
-        {
-            var leapYear = new LeapYear();
-
-            Assert.True(leapYear.IsLeapYear(2004));
-        }
-        
-        [Fact]
-        public void CheckIfItsLeapYear2008()
-        {
-            var leapYear = new LeapYear();
-
-            Assert.True(leapYear.IsLeapYear(2008));
+            Assert.True(leapYear.IsLeapYear(year));
         }
 
         [Fact]
@@ -36,11 +23,14 @@ namespace LeapYearKata.Tests
             Assert.False(leapYear.IsLeapYear(2001));
         }
 
-        [Fact]
-        public void CheckIfItsNotDivisibleBy100AndItsDivisibleBy4()
+        [Theory]
+        [InlineData(2000)]
+        [InlineData(2200)]
+        [InlineData(1700)]
+        public void CheckIfItsNotDivisibleBy100AndItsDivisibleBy4(int year)
         {
             var leapYear = new LeapYear();
-            Assert.False(leapYear.IsLeapYear(2000));
+            Assert.False(leapYear.IsLeapYear(year));
         } 
     }
 }
