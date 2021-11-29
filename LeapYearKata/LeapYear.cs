@@ -2,9 +2,9 @@
 {
     public class LeapYear
     {
-        public bool IsLeapYear(int i)
+        public bool IsLeapYear(int year)
         {
-            if (i == 2001)
+            if (year == 2001)
                 return false;
             return true;
         }
