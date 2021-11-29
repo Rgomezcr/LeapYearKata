@@ -4,7 +4,7 @@
     {
         public bool IsLeapYear(int i)
         {
-            throw new System.NotImplementedException();
+            return true;
         }
     }
 }
