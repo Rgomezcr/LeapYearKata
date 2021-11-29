@@ -31,6 +31,14 @@ namespace LeapYearKata.Tests
         {
             var leapYear = new LeapYear();
             Assert.False(leapYear.IsLeapYear(year));
+        }
+
+        [Theory]
+        [InlineData(400)]
+        public void CheckIfLeapYearItsDivisibleBy400(int year)
+        {
+            var leapYear = new LeapYear();
+            Assert.True(leapYear.IsLeapYear(year));
         } 
     }
 }
