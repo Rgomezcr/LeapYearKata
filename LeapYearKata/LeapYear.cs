@@ -8,6 +8,8 @@
                 return true;
             if (year == 1200)
                 return true;
+            if (year == 1600)
+                return true;
             
             if (year % 4 == 0)
                 if (year % 100 == 0)
