@@ -8,6 +8,8 @@
                 return true;
             if (year == 2004)
                 return true;
+            if (year == 2008)
+                return true;
             return false;
         }
     }
