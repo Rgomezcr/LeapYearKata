@@ -24,7 +24,7 @@ namespace LeapYearKata.Tests
         }
 
         [Theory]
-        [InlineData(2000)]
+        [InlineData(1000)]
         [InlineData(2200)]
         [InlineData(1700)]
         public void CheckIfItsNotDivisibleBy100AndItsDivisibleBy4(int year)

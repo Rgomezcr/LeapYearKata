@@ -4,11 +4,8 @@
     {
         public bool IsLeapYear(int year)
         {
-            if (year == 400)
-                return true;
-            if (year == 1200)
-                return true;
-            if (year == 1600)
+           
+            if (year % 400 == 0)
                 return true;
             
             if (year % 4 == 0)
